@@ -16,7 +16,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        self.didLoadingFinishedAfterAppLaunch()
         return true
+    }
+    
+    func didLoadingFinishedAfterAppLaunch() {
+        
+        if AppUserDefaults.localLanguage == nil {
+            AppUserDefaults.localLanguage = Constants.str_EnglishLanguage
+        }else if AppUserDefaults.localLanguage == Constants.str_SpanishLanguage
+        {
+            AppUserDefaults.localLanguage = Constants.str_SpanishLanguage
+        }else if AppUserDefaults.localLanguage == Constants.str_EnglishLanguage
+        {
+            AppUserDefaults.localLanguage = Constants.str_EnglishLanguage
+        }
+        
+        
+      
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

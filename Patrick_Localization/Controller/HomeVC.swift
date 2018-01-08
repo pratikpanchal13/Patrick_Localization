@@ -8,11 +8,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomeVC: UIViewController {
 
+    @IBOutlet weak var lblName: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        lblName.text = Languages.OK
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,5 +28,10 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func btnChangeLanguageClicked(_ sender: Any) {
+        
+        let preferanceVC  : PreferanceVC = self.storyboard?.instantiateViewController(withIdentifier: "PreferanceVC") as! PreferanceVC
+        self.navigationController?.pushViewController(preferanceVC, animated: true)
+    }
 }
 
