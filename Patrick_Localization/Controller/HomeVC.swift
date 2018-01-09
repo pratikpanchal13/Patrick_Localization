@@ -11,6 +11,9 @@ import UIKit
 class HomeVC: UIViewController {
 
     @IBOutlet weak var lblName: UILabel!
+    @IBOutlet weak var lblLanguageName: UILabel!
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +23,8 @@ class HomeVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         
         lblName.text = Languages.Welcome
+        lblLanguageName.text = AppUserDefaults.localLanguage
+
     }
 
     override func didReceiveMemoryWarning() {

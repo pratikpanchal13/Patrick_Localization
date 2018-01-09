@@ -22,6 +22,10 @@ class PreferanceVC: UIViewController {
     }
     
 
+    @IBAction func btnBackClicked(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
     @IBAction func btnSelectLanguageClicked(_ sender: Any) {
         let optionMenu = UIAlertController(title: nil, message:Languages.Choose_Option_language,  preferredStyle: .actionSheet)
         
