@@ -45,6 +45,24 @@ class PKLanguageUitily
             label.textAlignment = .left
         }
     }
+    
+    //MARK:- Set Loccalization On Button With Flip Image
+    func setLocalizationButton(_ button : UIButton){
+        
+        if AppUserDefaults.localLanguage == Constants.str_ArabicLanguage{
+            //            button.semanticContentAttribute = .forceRightToLeft
+            button.transform = CGAffineTransform(scaleX: -1.0, y: 1.0)
+            //            button.titleLabel?.transform = CGAffineTransform(scaleX: -1.0, y: 1.0)
+            //            button.imageView?.transform = CGAffineTransform(scaleX: -1.0, y: 1.0)
+        }else{
+            
+            //            button.semanticContentAttribute = .forceLeftToRight
+            button.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
+            //            button.titleLabel?.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
+            //            button.imageView?.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
+        }
+    }
+    
 }
 
 

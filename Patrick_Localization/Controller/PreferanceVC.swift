@@ -10,10 +10,13 @@ import UIKit
 
 class PreferanceVC: UIViewController {
 
+    @IBOutlet weak var btnBack: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        PKLanguageUitily().setLocalizationButton(btnBack)
     }
 
     override func didReceiveMemoryWarning() {

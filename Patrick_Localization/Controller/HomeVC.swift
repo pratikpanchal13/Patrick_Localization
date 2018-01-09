@@ -41,6 +41,7 @@ class HomeVC: UIViewController {
         
         PKLanguageUitily().setLocalizationLabel(lblName)
         PKLanguageUitily().setLocalizationView(self.view)
+
     }
 
     override func didReceiveMemoryWarning() {
