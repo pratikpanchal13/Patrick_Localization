@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  Patrick_Localization
+
+  Created by pratik panchal on 05/01/18.
+  Copyright © 2018 pratik panchal. All rights reserved.
+*/
+
+
+
+"OK"  = "حسنا";
+"Cancel" = "إلغاء";
+"Choose Option language" = "اختر خيار اللغة";
+
+"Welcome"   = "أهلا بك";
+
+//Language
+"English" = "الإنجليزية";
+"Spanish" = "الأسبانية";
+"Arabic"  = "عربى";
+
+

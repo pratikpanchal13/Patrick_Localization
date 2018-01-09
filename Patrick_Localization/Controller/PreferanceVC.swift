@@ -43,6 +43,38 @@ class PreferanceVC: UIViewController {
             AppUserDefaults.localLanguage = Constants.str_SpanishLanguage
             self.navigationController?.popViewController(animated: true)
         })
+      
+        let frenchAction = UIAlertAction(title:Languages.French, style: .default, handler:
+        {
+            (alert: UIAlertAction!) -> Void in
+            print("French")
+            AppUserDefaults.localLanguage = Constants.str_FrenchLanguage
+            self.navigationController?.popViewController(animated: true)
+        })
+      
+        let hindiAction = UIAlertAction(title:Languages.Hindi, style: .default, handler:
+        {
+            (alert: UIAlertAction!) -> Void in
+            print("Hindi")
+            AppUserDefaults.localLanguage = Constants.str_HindiLanguage
+            self.navigationController?.popViewController(animated: true)
+        })
+        
+        let gujaratiAction = UIAlertAction(title:Languages.Gujarati, style: .default, handler:
+        {
+            (alert: UIAlertAction!) -> Void in
+            print("Gujarati")
+            AppUserDefaults.localLanguage = Constants.str_GujaratiLanguage
+            self.navigationController?.popViewController(animated: true)
+        })
+        
+        let arabichAction = UIAlertAction(title:Languages.Arabic, style: .default, handler:
+        {
+            (alert: UIAlertAction!) -> Void in
+            print("Arabic")
+            AppUserDefaults.localLanguage = Constants.str_ArabicLanguage
+            self.navigationController?.popViewController(animated: true)
+        })
         
         let cancelAction = UIAlertAction(title: Languages.Cancel, style: .cancel, handler:
         {
@@ -51,18 +83,13 @@ class PreferanceVC: UIViewController {
         })
         optionMenu.addAction(englishAction)
         optionMenu.addAction(spanishAction)
+        optionMenu.addAction(frenchAction)
+        optionMenu.addAction(hindiAction)
+        optionMenu.addAction(gujaratiAction)
+        optionMenu.addAction(arabichAction)
         optionMenu.addAction(cancelAction)
         self.present(optionMenu, animated: true, completion: nil)
 
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

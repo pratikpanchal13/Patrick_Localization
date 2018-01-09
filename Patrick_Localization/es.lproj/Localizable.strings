@@ -7,9 +7,13 @@
 */
 
 "OK"  = "OK SPANISH";
-
+"Cancel" = "Cancelar";
 "Choose Option language" = "Elija el idioma de la opción";
 
+"Welcome"   = "Bienvenido";
+
+//Language
 "English" = "Inglés"; 
 "Spanish" = "Español";
-"Cancel" = "Cancelar";
+"Arabic" = "Arábica";
+

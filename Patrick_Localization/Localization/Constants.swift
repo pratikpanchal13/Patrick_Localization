@@ -18,6 +18,9 @@ struct Constants{
     //MARK: - Language
     static let str_EnglishLanguage = "EnglishLanguage"
     static let str_SpanishLanguage = "SpanishLanguage"
+    static let str_FrenchLanguage = "FrenchLanguage"
+    static let str_HindiLanguage = "HindiLanguage"
+    static let str_GujaratiLanguage = "GujaratiLanguage"
     static let str_ArabicLanguage  = "ArabicLanguage"
 }
 

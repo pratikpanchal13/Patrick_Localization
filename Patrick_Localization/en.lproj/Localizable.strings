@@ -9,10 +9,17 @@
 
 
 "OK"  = "OK ENGLISH";
-
+"Cancel" = "Cancel";
 "Choose Option language" = "Choose Option language";
 
+"Welcome"   = "Welcome";
+
+//Language
 "English" = "English";
 "Spanish" = "Spanish";
-"Cancel" = "Cancel";
+"French"  = "French";
+"Hindi"   = "Hindi";
+"Gujarati" = "Gujarati";
+"Arabic"  = "Arabic";
+
 

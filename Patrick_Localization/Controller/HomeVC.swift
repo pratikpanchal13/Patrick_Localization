@@ -19,7 +19,7 @@ class HomeVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         
-        lblName.text = Languages.OK
+        lblName.text = Languages.Welcome
     }
 
     override func didReceiveMemoryWarning() {
