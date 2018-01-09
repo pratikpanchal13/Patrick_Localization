@@ -17,21 +17,69 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+
+
         self.didLoadingFinishedAfterAppLaunch()
+
         return true
     }
     
+
     func didLoadingFinishedAfterAppLaunch() {
         
-        if AppUserDefaults.localLanguage == nil {
-            AppUserDefaults.localLanguage = Constants.str_EnglishLanguage
-        }else if AppUserDefaults.localLanguage == Constants.str_SpanishLanguage
-        {
-            AppUserDefaults.localLanguage = Constants.str_SpanishLanguage
-        }else if AppUserDefaults.localLanguage == Constants.str_EnglishLanguage
-        {
-            AppUserDefaults.localLanguage = Constants.str_EnglishLanguage
-        }
+        print("Language is ",AppUserDefaults.localLanguage)
+        
+//
+//        if AppUserDefaults.localLanguage == nil {
+//            AppUserDefaults.localLanguage = Constants.str_EnglishLanguage
+//        }
+//        else if AppUserDefaults.localLanguage == Constants.str_EnglishLanguage
+//        {
+//            AppUserDefaults.localLanguage = Constants.str_EnglishLanguage
+//        }
+//        else if AppUserDefaults.localLanguage == Constants.str_SpanishLanguage
+//        {
+//            AppUserDefaults.localLanguage = Constants.str_SpanishLanguage
+//        }
+//        else if AppUserDefaults.localLanguage == Constants.str_FrenchLanguage
+//        {
+//            AppUserDefaults.localLanguage = Constants.str_FrenchLanguage
+//        }
+//        else if AppUserDefaults.localLanguage == Constants.str_HindiLanguage
+//        {
+//            AppUserDefaults.localLanguage = Constants.str_HindiLanguage
+//        }
+//        else if AppUserDefaults.localLanguage == Constants.str_GujaratiLanguage
+//        {
+//            AppUserDefaults.localLanguage = Constants.str_GujaratiLanguage
+//        }
+//        else if AppUserDefaults.localLanguage == Constants.str_ArabicLanguage
+//        {
+//            AppUserDefaults.localLanguage = Constants.str_ArabicLanguage
+//        }
+
+
+        
+//        switch AppUserDefaults.localLanguage {
+//        case Constants.str_EnglishLanguage/:
+//            AppUserDefaults.localLanguage = Constants.str_EnglishLanguage
+//            break;
+//        case Constants.str_SpanishLanguage?:
+//            AppUserDefaults.localLanguage = Constants.str_SpanishLanguage
+//            break;
+//        case Constants.str_FrenchLanguage?:
+//            AppUserDefaults.localLanguage = Constants.str_FrenchLanguage
+//            break;
+//        case Constants.str_HindiLanguage?:
+//            AppUserDefaults.localLanguage = Constants.str_HindiLanguage
+//            break;
+//        case Constants.str_ArabicLanguage?:
+//            AppUserDefaults.localLanguage = Constants.str_ArabicLanguage
+//            break;
+//        default:
+//            AppUserDefaults.localLanguage = Constants.str_EnglishLanguage
+//
+//        }
         
         
       

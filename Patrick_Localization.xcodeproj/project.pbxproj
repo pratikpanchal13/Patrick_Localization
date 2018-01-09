@@ -11,6 +11,7 @@
 		120DE1802003A5E50074CF86 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120DE17E2003A5E50074CF86 /* Constants.swift */; };
 		120DE1842003A6180074CF86 /* PreferanceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120DE1822003A6180074CF86 /* PreferanceVC.swift */; };
 		120DE1852003A6180074CF86 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120DE1832003A6180074CF86 /* HomeVC.swift */; };
+		1241283620049FF200119650 /* PKLanguageUitily.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1241283520049FF200119650 /* PKLanguageUitily.swift */; };
 		124A2A0A200491EC00D35DC2 /* LanguageCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A2A09200491EC00D35DC2 /* LanguageCodes.swift */; };
 		12FA3AC71FFF96750055C6F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FA3AC61FFF96750055C6F5 /* AppDelegate.swift */; };
 		12FA3ACC1FFF96750055C6F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12FA3ACA1FFF96750055C6F5 /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 		120DE17E2003A5E50074CF86 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		120DE1822003A6180074CF86 /* PreferanceVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferanceVC.swift; sourceTree = "<group>"; };
 		120DE1832003A6180074CF86 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		1241283520049FF200119650 /* PKLanguageUitily.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKLanguageUitily.swift; sourceTree = "<group>"; };
 		124A2A0520048ADC00D35DC2 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		124A2A0620048F3300D35DC2 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		124A2A0720048F4B00D35DC2 /* gu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = gu; path = gu.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -108,6 +110,14 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		1241283420049FA900119650 /* R to L Support */ = {
+			isa = PBXGroup;
+			children = (
+				1241283520049FF200119650 /* PKLanguageUitily.swift */,
+			);
+			path = "R to L Support";
+			sourceTree = "<group>";
+		};
 		12FA3ABA1FFF96740055C6F5 = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +141,7 @@
 		12FA3AC51FFF96750055C6F5 /* Patrick_Localization */ = {
 			isa = PBXGroup;
 			children = (
+				1241283420049FA900119650 /* R to L Support */,
 				120DE1812003A6180074CF86 /* Controller */,
 				120DE17C2003A5CB0074CF86 /* Localization */,
 				12FA3AC61FFF96750055C6F5 /* AppDelegate.swift */,
@@ -307,6 +318,7 @@
 				12FA3AC71FFF96750055C6F5 /* AppDelegate.swift in Sources */,
 				120DE1802003A5E50074CF86 /* Constants.swift in Sources */,
 				120DE17F2003A5E50074CF86 /* Languages.swift in Sources */,
+				1241283620049FF200119650 /* PKLanguageUitily.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,11 +499,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q765JXJ79R;
 				INFOPLIST_FILE = Patrick_Localization/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "pratik.Patrick-Localization";
+				PRODUCT_BUNDLE_IDENTIFIER = com.panamaxil.x1.subscriberDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -501,11 +516,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q765JXJ79R;
 				INFOPLIST_FILE = Patrick_Localization/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "pratik.Patrick-Localization";
+				PRODUCT_BUNDLE_IDENTIFIER = com.panamaxil.x1.subscriberDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

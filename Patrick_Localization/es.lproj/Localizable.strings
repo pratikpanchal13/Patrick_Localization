@@ -10,10 +10,15 @@
 "Cancel" = "Cancelar";
 "Choose Option language" = "Elija el idioma de la opción";
 
-"Welcome"   = "Bienvenido";
+"Welcome"   = "Welcome Spanish";
 
 //Language
 "English" = "Inglés"; 
 "Spanish" = "Español";
+"French"  = "French";
+"Hindi"   = "Hindi";
+"Gujarati" = "Gujarati";
 "Arabic" = "Arábica";
+
+
 

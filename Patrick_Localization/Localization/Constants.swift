@@ -19,9 +19,10 @@ struct Constants{
     static let str_EnglishLanguage = "EnglishLanguage"
     static let str_SpanishLanguage = "SpanishLanguage"
     static let str_FrenchLanguage = "FrenchLanguage"
-    static let str_HindiLanguage = "HindiLanguage"
+    static let str_HindiLanguage =  "HindiLanguage"
     static let str_GujaratiLanguage = "GujaratiLanguage"
     static let str_ArabicLanguage  = "ArabicLanguage"
+    
 }
 
 
@@ -29,11 +30,12 @@ struct Constants{
 struct AppUserDefaults {
     
     //MARK: - Userdefault
-    private static let LocalLanguage = "LocalLanguage"
+    public static let LocalLanguage = "LocalLanguage"
 
     static var localLanguage:String? {
         get {return UserDefaults.standard.string(forKey: LocalLanguage)}
         set(v) {UserDefaults.standard.set(v, forKey: LocalLanguage)}
     }
+    
     
 }

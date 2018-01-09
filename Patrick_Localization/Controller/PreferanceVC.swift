@@ -34,9 +34,8 @@ class PreferanceVC: UIViewController {
             
             (alert: UIAlertAction!) -> Void in
             print("English")
-           
             AppUserDefaults.localLanguage = Constants.str_EnglishLanguage
-    
+            UIView.appearance().semanticContentAttribute = .forceLeftToRight
             self.navigationController?.popViewController(animated: true)
         })
         
@@ -53,6 +52,7 @@ class PreferanceVC: UIViewController {
             (alert: UIAlertAction!) -> Void in
             print("French")
             AppUserDefaults.localLanguage = Constants.str_FrenchLanguage
+            print("AppUserDefaults.localLanguage",AppUserDefaults.localLanguage)
             self.navigationController?.popViewController(animated: true)
         })
       
@@ -77,6 +77,7 @@ class PreferanceVC: UIViewController {
             (alert: UIAlertAction!) -> Void in
             print("Arabic")
             AppUserDefaults.localLanguage = Constants.str_ArabicLanguage
+            UIView.appearance().semanticContentAttribute = .forceLeftToRight
             self.navigationController?.popViewController(animated: true)
         })
         

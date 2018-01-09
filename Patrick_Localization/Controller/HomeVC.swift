@@ -10,21 +10,37 @@ import UIKit
 
 class HomeVC: UIViewController {
 
+    //MARK:- Outlets & Variables
     @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var lblLanguageName: UILabel!
 
-    
+    //MARK:- View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
     }
-    
     
     override func viewWillAppear(_ animated: Bool) {
         
+
+
+        self.setLocatizationString()    // Func Set Localization String
+        self.setRtoLsupprt()            // Func Set R to L Support VisaVersa
+    }
+    
+    
+    //MARK:- Function Set Localization String
+    func setLocatizationString(){
+
         lblName.text = Languages.Welcome
         lblLanguageName.text = AppUserDefaults.localLanguage
-
+    }
+    
+    //MARK:- Function R to L Supprot
+    func setRtoLsupprt(){
+        
+        PKLanguageUitily().setLocalizationLabel(lblName)
+        PKLanguageUitily().setLocalizationView(self.view)
     }
 
     override func didReceiveMemoryWarning() {
